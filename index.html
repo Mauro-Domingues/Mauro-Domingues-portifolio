@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/keyframes.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Mauro Domingues - Portifólio</title>
 </head>
@@ -12,30 +13,49 @@
     <header>
         <nav>
             <img id="logo" src="https://th.bing.com/th/id/OIP.dRMJMbYKf-Fyb1lTUeNsdQHaD4?pid=ImgDet&rs=1" alt="logo"/>
-            <input type="checkbox" id="checkbox-menu" class="transform"/>
+            <input type="checkbox" id="checkbox-menu"/>
             <label class="menu-button-container" for="checkbox-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
             <ul class="menu">
-                <li>
-                    <a href="#">Início</a>
-                </li>
-                <li>
-                    <a href="#about-section">Sobre</a>
-                </li>
-                <li>
-                    <a href="#project-section">Projetos</a>
-                </li>
-                <li>
-                    <a href="#contact-section">Contato</a>
-                </li>
+                <li><a href="#about-section">Sobre</a></li>
+                <li><a href="#project-section">Projetos</a></li>
+                <li><a href="#contact-section">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="about-section">
+        <header class="title">
+            <h1 class="hello">Olá<span></span></h1>
+            <h1 class="my-name-is">Meu nome é<span></span></h1>
+            <h1 class="mauro">Mauro Domingues<span></span></h1>
+        </header>
+        <h3 class="bio-container"><span class="bio"></span>
+        <span class="bar"></span></h3>
+        <article class="knowledge-info">
+            <h2>Linguagens e ferramentas no qual tenho conhecimento:</h2>
+            <figure>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="70px"/>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="70px"/>
+                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="70px"/>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="70px"/>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="70px"/>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="70px"/>
+            </figure>
+        </article>
+        <button class="next"><a href="#project-section">&#10096;&#10092;&#10092;</a></button>
     </main>
+
+    <section id="project-section">
+
+    </section>
+
+    <footer id="contact-section">
+        
+    </footer>
+
     <script src="./js/script.js"></script>
 </body>
 </html>

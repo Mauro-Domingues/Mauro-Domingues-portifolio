@@ -26,6 +26,10 @@
         border-radius: 5px;
     }
 
+    .menu > li:first-child{
+        border-top: 1px solid #fff;
+    }
+
     .menu>li:not(:last-child) {
         border-bottom: 1px solid #fff;
     }
@@ -78,13 +82,16 @@
         transform: rotate(45deg);
         top: 8px;
     }
-
-    /*#checkbox-menu:not(:checked)~ul.menu li{
-        display: none;
-    }*/
     
     #checkbox-menu:checked~ul.menu {
         transform: translateX(0vw);
     }
 
+    #about-section, #project-section, #contact-section{
+        padding-top: 50px;
+    }
+
+    #about-section .title{
+        align-self: flex-start;
+    }
 }
