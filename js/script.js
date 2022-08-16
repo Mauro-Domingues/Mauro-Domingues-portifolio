@@ -1,4 +1,5 @@
 const bioContainer = document.querySelector(".bio-container")
+const buttonNext = document.querySelector(".next")
 const bio = document.querySelector(".bio")
 
 let i = 0
@@ -6,6 +7,7 @@ let message = "Sou iniciante na área da programação, recentemente finalizando
 
 setTimeout(() => {
     bioContainer.style.opacity = "1"
+
     function typing(){
         if (i < message.length){
             bio.textContent += message.charAt(i)
@@ -14,3 +16,7 @@ setTimeout(() => {
         }
     }typing()
 }, 3500)
+
+setTimeout(() => {
+    buttonNext.style.opacity = "1"
+}, 16000)

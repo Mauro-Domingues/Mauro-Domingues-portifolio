@@ -67,15 +67,14 @@ li a:hover{
 }
 
 button.next{
-    position: absolute;
+    opacity: 0;
     background-color: transparent;
     border: none;
     align-self: center;
     cursor: pointer;
     width: 50px;
-    bottom: 2px;
+    margin-top: 50px;
     transform: rotate(270deg);
-    
 }
 
 button.next a{
