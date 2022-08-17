@@ -188,8 +188,9 @@ button.next{
 
 figure img:hover{
     transform: scale(1.2);
-    filter: drop-shadow (10px 10px 10px #000); /* Verificar o motivo de não funcionar */
     transition: 500ms;
+    filter: drop-shadow(0 1px 1px #000);
+    
 }
 
 /* Seção de Projetos */
