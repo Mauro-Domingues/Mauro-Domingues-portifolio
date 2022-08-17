@@ -211,7 +211,7 @@ figure img:hover{
 
 }
 
-.adress a{
+footer a{
     color: #fff;
     font-style: normal;
 }
@@ -249,9 +249,14 @@ figure img:hover{
 }
 
 .input-content input, .input-content textarea{
+    padding-left: 5px;
     width: 90%;
     align-self: flex-start;
     justify-self: flex-end;
+}
+
+input#name{
+    border-radius: 0 10px 0 0;
 }
 
 .input-content textarea{
@@ -263,4 +268,8 @@ figure img:hover{
     cursor: pointer;
     width: 50%;
     margin-top: 10px;
+}
+
+footer h4 {
+    align-self: center;
 }
