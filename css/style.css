@@ -66,23 +66,26 @@ li a:hover{
     align-items: center;
 }
 
-button.next{
-    opacity: 0;
+button#next{
     background-color: transparent;
     border: none;
     align-self: center;
     cursor: pointer;
-    width: 50px;
+    min-width: 50px;
     margin-top: 50px;
     transform: rotate(270deg);
 }
 
-button.next a{
+button#next a{
     color: #f0f;
-    text-shadow: 0 0 4px #a0a;
+    text-shadow: 0 0 2px #a0a;
     font-size: 50px;
     letter-spacing: -8px;
     animation: typing 1s step-end infinite alternate;
+}
+
+button.next{
+    opacity: 0;
 }
 
 ::-webkit-scrollbar{
@@ -96,13 +99,13 @@ button.next a{
     font-weight: 700;
 }
 
-#about-section > *{
+#about-section > * {
     min-width: 300px;
     max-width: 500px;
 }
 
 #about-section .title{
-    margin: 40px 0 30px 0;
+    margin: 30px 0 20px 0;
     align-self: flex-start;
 }
 
@@ -132,6 +135,9 @@ button.next a{
     animation: text_reveal_box 0.8s ease;
     animation-delay: .5s;
     background-color: #000;
+    background-image: url(../images/right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .title h1:first-child span {
@@ -151,8 +157,8 @@ button.next a{
     text-align: left;
 }
 
-.bar{
-    margin-left: 2px;
+.bar-animation{
+    margin-left: 3px;
     padding: 0 4px;
     background-color: #000;
     animation: typing .5s step-end infinite alternate;
@@ -162,7 +168,7 @@ button.next a{
     margin-top: 60px;
     opacity: 0;
     animation: text_reveal .5s ease forwards;
-    animation-delay: 15.3s;
+    animation-delay: 15s;
 }
 
 .knowledge-info figure{
@@ -182,7 +188,7 @@ button.next a{
 
 figure img:hover{
     transform: scale(1.2);
-    filter: drop-shadow (10px 10px 10px #000);
+    filter: drop-shadow (10px 10px 10px #000); /* Verificar o motivo de não funcionar */
     transition: 500ms;
 }
 
