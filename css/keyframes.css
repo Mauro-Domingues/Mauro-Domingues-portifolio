@@ -23,3 +23,21 @@
         left: 100%;
     }
 }
+
+@keyframes show_box {
+    0%{
+        bottom: 150vh;
+    }
+
+    50%{
+        bottom: 40vh
+    }
+
+    70%{
+        bottom: 45vh
+    }
+
+    100%{
+        bottom: 40vh
+    }
+}

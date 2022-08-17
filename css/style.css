@@ -56,7 +56,7 @@ li a:hover{
 
 /* Seções */
 
-#about-section, #project-section, #contact-section{
+#about-section, #project-section{
     min-height: 100vh;
     padding-top: 60px;
     margin: 0 10px;
@@ -190,8 +190,77 @@ figure img:hover{
     transform: scale(1.2);
     transition: 500ms;
     filter: drop-shadow(0 1px 1px #000);
-    
 }
 
 /* Seção de Projetos */
 /* Seção de Contato */
+
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+    gap: 10px;
+
+}
+
+.adress a{
+    color: #fff;
+    font-style: normal;
+}
+
+.adress a:hover{
+    text-decoration: underline;
+}
+
+.adress a img{
+    margin-right: 7px;
+}
+
+.email-box{
+    display: none;
+    position: fixed;
+    bottom: 40vh;
+    flex-direction: column;
+    align-self: center;
+    width: 240px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    border: 1px solid #fff;
+    box-shadow: 0 0 4px #000;
+    animation: show_box 2s;
+    transform: scale(1.6);
+}
+
+.input-content{
+    display: grid;
+    height: 60%;
+    margin-bottom: 15px;
+    grid-template-columns: 25% 75%;
+}
+
+.input-content input, .input-content textarea{
+    width: 90%;
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+.input-content textarea{
+    height: 100%;
+}
+
+.email-box button{
+    align-self: center;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+}

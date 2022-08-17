@@ -87,11 +87,15 @@
         transform: translateX(0vw);
     }
 
-    #about-section, #project-section, #contact-section{
+    #about-section, #project-section{
         padding-top: 50px;
     }
 
     #about-section .title{
         margin: 15px 0 10px 0;
+    }
+
+    .email-box{
+        transform: scale(1);
     }
 }

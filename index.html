@@ -39,9 +39,9 @@
             <figure class="knowledge-icons">
                 <img class="child" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="70px"/>
                 <img class="child" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="70px"/>
-                <img class="child" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="70px"/>
+                <img class="child" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="70px"/>
                 <img class="child" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="70px"/>
-                <img class="child" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="70px"/>
+                <img class="child" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg" width="70px"/>
                 <img class="child" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="70px"/>
             </figure>
         </article>
@@ -54,8 +54,25 @@
     </section>
 
     <footer id="contact-section">
-        <button id="next"><a href="#project-section">&#10097;&#10093;&#10093;</a></button>
-        <h1>Footer em construção</h1>
+        <address class="adress">
+            <a href="https://wa.me/5535991248514"><img src="https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg" width="20px">Entre em contato pelo whatsapp</a>
+            <a class="show-box" href="#contact-section"><img src="./images/email-icon.png" width="20px">Entre em contato pelo email</a>
+            <a href="https://www.linkedin.com/in/mauro-domingues-mrcross-37374a245"><img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" width="20px">Conecte pelo LinkedIn</a>
+            <a href="https://github.com/Mauro-Domingues"><img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" width="20px">Visite meu Github</a>
+            <a href="./pdf/Mauro Domingues Filho - Currículo.pdf" type="application/pdf"><img src="./images/curriculum-icon.png" width="20px">Conheça meu currículo</a>
+        </address>
+        <form class="email-box" action="https://formsubmit.co/maurinho.villa@hotmail.com" method="POST">
+            <div class="input-content">
+                <label for="name">Nome: </label>
+                <input type="text" id="name" placeholder="Digite seu nome" required>
+                <label for="email">Email: </label>
+                <input type="email" id="name" placeholder="Digite seu email" required>
+                <label class="text-area-label" for="textarea">Assunto: </label>
+                <textarea id="textarea" placeholder="Digite o assunto" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="button" class="hide-box">Cancelar</button>
+        </form>
     </footer>
 
     <script src="./js/script.js"></script>

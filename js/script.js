@@ -4,6 +4,9 @@ const bio = document.querySelector(".bio")
 const bar = document.querySelector(".bar")
 const menu = document.querySelector(".menu")
 const checkboxMenu = document.querySelector("#checkbox-menu")
+const showBox = document.querySelector(".show-box")
+const hideBox = document.querySelector(".hide-box")
+const emailBox = document.querySelector(".email-box")
 
 let i = 0
 let message = "Sou programador web junior, recentemente finalizando minha formação full stack com a Startse Tech Academy. Sou apaixonado por tecnologia e uma pessoa extremamente curiosa, sempre querendo aprender mais. #BoraAprender"
@@ -31,4 +34,12 @@ setTimeout(() => {
 
 menu.addEventListener("click", () => {
     checkboxMenu.checked = false
+})
+
+showBox.addEventListener("click", () => {
+    emailBox.style.display = "flex"
+})
+
+hideBox.addEventListener("click", () => {
+    emailBox.style.display = "none"
 })
