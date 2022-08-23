@@ -110,6 +110,8 @@ button.next{
 }
 
 .title h1{
+    position: relative;
+    width: fit-content;
     color: transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
@@ -131,13 +133,14 @@ button.next{
     position: absolute;
     left: 0;
     height: 40px;
+    border-radius: 0 15px 15px 0;
     width: 0%;
     animation: text_reveal_box 0.8s ease;
     animation-delay: .5s;
     background-color: #000;
     background-image: url(../images/right-arrow.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: left center;
 }
 
 .title h1:first-child span {
