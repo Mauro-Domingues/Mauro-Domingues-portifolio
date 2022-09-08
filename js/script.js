@@ -9,7 +9,7 @@ const hideBox = document.querySelector(".hide-box")
 const emailBox = document.querySelector(".email-box")
 
 let i = 0
-let message = "Sou programador web junior, recentemente finalizando minha formação full stack com a Startse Tech Academy. Sou apaixonado por tecnologia e uma pessoa extremamente curiosa, sempre querendo aprender mais. #BoraAprender"
+let message = "Sou programador web, apaixonado por tecnologia e uma pessoa extremamente curiosa, sempre em busca de aprender mais. #BoraAprender"
 
 setTimeout(() => {
     bioContainer.style.opacity = "1"
@@ -21,16 +21,17 @@ setTimeout(() => {
             setTimeout(typing, 50)
         }
     }typing()
+    
 }, 3500)
 
 setTimeout(() => {
     bar.textContent = ""
     bar.classList.toggle("bar-animation")
-}, 14700)
+}, 10000)
 
 setTimeout(() => {
     buttonNext.style.opacity = "1"
-}, 15700)
+}, 10500)
 
 menu.addEventListener("click", () => {
     checkboxMenu.checked = false
