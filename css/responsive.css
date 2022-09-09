@@ -84,12 +84,26 @@
         transform: translateX(0vw);
     }
 
-    #about-section, #project-section{
-        padding-top: 50px;
+    #about-section{
+        padding: 50px 0 50px 0;
     }
 
     #about-section .title{
         margin: 15px 0 10px 0;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .project-container a {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-content {
+        font-size: 0.5rem;
+        margin: 2.5px 7.5px 7.5px 7.5px;
     }
 
     .email-box{

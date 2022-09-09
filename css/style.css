@@ -58,9 +58,13 @@ li a:hover{
 
 /* Seções */
 
-#about-section, #project-section{
+#about-section{
     min-height: 100vh;
-    padding-top: 60px;
+    padding: 60px 0 60px 0;
+}
+
+#about-section, #project-section{
+    padding-bottom: 60px;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
@@ -69,12 +73,14 @@ li a:hover{
 }
 
 button#next{
+    position: absolute;
     background-color: transparent;
     border: none;
     align-self: center;
     cursor: pointer;
     min-width: 50px;
     margin-top: 50px;
+    bottom: 40px;
     transform: rotate(270deg);
 }
 
@@ -200,6 +206,82 @@ figure img:hover{
 }
 
 /* Seção de Projetos */
+
+#project-section{
+    width: 90%;
+}
+
+#project-section h1{
+    margin: 0 auto 40px auto;
+    font-size: 2rem;
+    text-shadow: 0 0 2px #a0a;
+}
+
+.project-container {
+    width: 90%;
+    margin: 5px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.project-container a {
+    text-decoration: none;
+    padding: 0;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.project {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    text-shadow: 0 0 2px #a0a;
+    box-shadow: 0 0 2px #a0a;
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px #a0a;
+}
+
+.project:active {
+    transform: scale(0.99);
+    box-shadow: none;
+    transition: all 0s;
+}
+
+.project figure {
+    margin: 0;
+    padding: 60% 0 0 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.project figure img {
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-content {
+    margin: 5px 15px 15px 15px;
+}
+
 /* Seção de Contato */
 
 #contact-section{
