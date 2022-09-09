@@ -60,11 +60,10 @@ li a:hover{
 
 #about-section{
     min-height: 100vh;
-    padding: 60px 0 60px 0;
 }
 
 #about-section, #project-section{
-    padding-bottom: 60px;
+    padding: 60px 0 60px 0;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
