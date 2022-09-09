@@ -24,7 +24,7 @@ nav {
 }
 
 nav #logo {
-    height: 75%;
+    height: 85%;
     margin-left: 0.5%;
 }
 
@@ -174,7 +174,7 @@ button.next{
     margin-top: 60px;
     opacity: 0;
     animation: text_reveal .5s ease forwards;
-    animation-delay: 10s;
+    animation-delay: 10.9s;
 }
 
 .knowledge-info figure{

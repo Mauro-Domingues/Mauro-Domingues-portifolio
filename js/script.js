@@ -27,11 +27,11 @@ setTimeout(() => {
 setTimeout(() => {
     bar.textContent = ""
     bar.classList.toggle("bar-animation")
-}, 10000)
+}, 10400)
 
 setTimeout(() => {
     buttonNext.style.opacity = "1"
-}, 10500)
+}, 11400)
 
 menu.addEventListener("click", () => {
     checkboxMenu.checked = false
