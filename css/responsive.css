@@ -84,7 +84,7 @@
         transform: translateX(0vw);
     }
 
-    #about-section{
+    #about-section, #prpject-section{
         padding: 50px 0 50px 0;
     }
 
